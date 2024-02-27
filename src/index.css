@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionFixed.mui-fixed.css-asu5rr-MuiPaper-root-MuiAppBar-root {
+  position: relative;
+  display: block;
+}
+
+.App-logo {
+  width: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,3 +1,8 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
 .App {
   text-align: center;
 }
@@ -22,6 +27,18 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+
+.boxStyle{
+  position: "absolute";
+  top: "50%";
+  left: "50%";
+  transform: "translate(-50%, -50%)";
+  width: "35%";
+  background-color: "background.paper";
+  box-shadow: 24;
+  border-radius: '0.6rem';
 }
 
 .App-link {
