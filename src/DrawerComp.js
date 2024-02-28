@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import { DATA } from './data/DATA';
 import {Drawer, List, ListItemButton, ListItemIcon,ListItemText,IconButton} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-const PAGES = ['Products', 'Services', 'AboutUs', 'ContactUs','LogIn','LogOut'];
 const DrawerComp = () => {
     const [openDrawer, setOpenDrawer] = useState(false)
     return(
@@ -9,7 +9,7 @@ const DrawerComp = () => {
             <Drawer open={openDrawer} onClose={ ()=> setOpenDrawer(false)}>
                 <List>
                     {
-                        PAGES.map((page,index)=>(
+                        DATA.map((page,index)=>(
                             <ListItemButton onClick={()=>setOpenDrawer(false)} key={index}>
                                 <ListItemIcon>
                                     <ListItemText>{page}</ListItemText>
@@ -24,7 +24,7 @@ const DrawerComp = () => {
                     </ListItemButton>
                 </List>
             </Drawer>
-            <IconButton sx={{color: 'white', marginLeft: 'auto'}} onClick={() => setOpenDrawer(!openDrawer)}>
+            <IconButton sx={{color: 'white'}} onClick={() => setOpenDrawer(!openDrawer)}>
                 <MenuIcon></MenuIcon>
             </IconButton>
         </React.Fragment>
