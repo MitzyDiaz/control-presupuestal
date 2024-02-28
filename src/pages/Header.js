@@ -12,7 +12,7 @@ export const Header = () => {
     const isMatch = useMediaQuery(theme.breakpoints.down('md'));
     const name = 'Control Presupuestal';
 
-    const [setAnchorElNav] = React.useState(null);
+    const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
     const handleOpenUserMenu = (event) => {
